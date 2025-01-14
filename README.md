@@ -1,7 +1,11 @@
 # ElevationToGeoTIFF
-# 標高データからGeoTIFF変換までのまとめ
+## 標高データからGeoTIFF変換までのまとめ
 
-このプロジェクトは、XML形式の標高データを解析し、GeoTIFF形式に変換するまでの手順を記録したものです。GDALを試みましたが、環境の問題によりXMLデータを直接解析して作業を進めています。
+このプロジェクトは、XML形式の標高データを解析し、GeoTIFF形式に変換するまでの手順を記録したものです。GDALを試みましたが、環境の問題によりXMLデータを直接解析して作業を進めています。初作業だったので時間かかりました。
+
+ファイルには、HTML出力した作業手順まとめ、作業のスクリーンショット、完成したGeoTIFFファイルを使用してPythonで出力した表などがあります。
+
+また、以下に作業で使ったnotebookのURL貼ってあります。ご参考までに。
 
 Google Colob notebook閲覧のみ
 https://colab.research.google.com/drive/1CyuICEEvJ5O61nIr5LIpvzLlPFoc5LEl?usp=sharing
@@ -31,8 +35,10 @@ https://colab.research.google.com/drive/1CyuICEEvJ5O61nIr5LIpvzLlPFoc5LEl?usp=sh
    from google.colab import drive
    drive.mount('/content/drive')
    ```
+   はじめマウントがうまくいかなかったので、マウントリセット→再接続しました。
+   また、Google Coloa無料枠は、2時間でnotebookタイムアウトするので、ここのタイミングでも再接続します。
 
-3. **ファイルを展開**:
+4. **ファイルを展開**:
    - XMLファイルを利用します。
 
 ---
@@ -181,6 +187,6 @@ print(f"Elevation data saved to: {output_csv}")
 
 ---
 
-これで、XML形式の標高データをGeoTIFFに変換する作業が完了します！
+これで、XML形式の標高データをGeoTIFFに変換する作業が完了しました！
 
 
