@@ -3,6 +3,8 @@
 
 このプロジェクトは、XML形式の標高データを解析し、GeoTIFF形式に変換するまでの手順を記録したものです。GDALを試みましたが、環境の問題によりXMLデータを直接解析して作業を進めています。
 
+Google Colob notebook閲覧のみ
+https://colab.research.google.com/drive/1CyuICEEvJ5O61nIr5LIpvzLlPFoc5LEl?usp=sharing
 ---
 
 ## **1. 必要なライブラリのインストール**
@@ -134,7 +136,7 @@ plt.show()
 
 ```
 可視化別の方法
-```
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -149,8 +151,7 @@ plt.title('Cleaned Elevation Map')
 plt.xlabel('Column Index')
 plt.ylabel('Row Index')
 plt.show()
-
----
+```
 
 ## **7. 標高データを表形式で出力**
 
