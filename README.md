@@ -23,6 +23,8 @@ https://colab.research.google.com/drive/1CyuICEEvJ5O61nIr5LIpvzLlPFoc5LEl?usp=sh
 
 1. **国土地理院から標高データ（GML形式）をダウンロード**:
    - 例: `FG-GML-5339-23-DEM5A.zip`
+   - https://fgd.gsi.go.jp/download/menu.php
+   - 基盤地図情報　数値標高モデルを選択
 
 2. **Google Driveにアップロードし、Google Colabで作業**:
    ```python
