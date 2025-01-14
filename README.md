@@ -1,8 +1,9 @@
 # ElevationToGeoTIFF
 
-### 標高データ取得からGeoTIFF変換までの手順
+### Google Colob使用した標高データ取得からGeoTIFF変換までの手順まとめ
 
 以下は、XML形式の標高データを解析し、GeoTIFF形式に変換する手順の詳細です。
+自分でやってみたものまとめてみました。ご参考までに。
 
 ---
 
