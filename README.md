@@ -131,7 +131,24 @@ plt.title('Elevation Map')
 plt.xlabel('Column Index')
 plt.ylabel('Row Index')
 plt.show()
+
 ```
+可視化別の方法
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 欠損値（-9999）を np.nan に置き換える
+elevation_matrix_cleaned = np.where(elevation_matrix == -9999, np.nan, elevation_matrix)
+
+# プロット
+plt.figure(figsize=(10, 8))
+plt.imshow(elevation_matrix_cleaned, cmap='terrain', aspect='auto')
+plt.colorbar(label='Elevation (m)')
+plt.title('Cleaned Elevation Map')
+plt.xlabel('Column Index')
+plt.ylabel('Row Index')
+plt.show()
 
 ---
 
